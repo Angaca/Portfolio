@@ -1,39 +1,67 @@
 import { useState } from "react";
 
 const Navbar = () => {
-  const [burger, setBurger] = useState(false);
+  const [menu, setMenu] = useState(false);
 
-  const handleBurger = () => {
-    setBurger(!burger);
+  const toggleMenu = () => {
+    setMenu(!menu);
   };
 
   return (
-    <nav className="navbar has-shadow is-spaced is-primary is-fixed-top">
-      <div className="navbar-brand">
-        <p className="navbar-item title">Andrea Catania</p>
-        <div
-          className={`navbar-burger ${burger ? "is-active" : null}`}
-          data-target="navbarElements"
-          onClick={handleBurger}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+    <div className="hero-head">
+      <nav className="navbar has-shadow is-transparent is-spaced is-fixed-top is-dark">
+        <div className="navbar-brand">
+          <p className="navbar-item is-size-2">AC</p>
+          <div
+            className="navbar-burger my-auto mr-3"
+            data-target="navbarElements"
+            onClick={toggleMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-      </div>
 
-      <div
-        className={`navbar-menu ${burger ? "is-active" : null}`}
-        id="navbarElements"
-      >
-        <div className="navbar-end">
-          <p className="navbar-item">About</p>
-          <p className="navbar-item">Projects</p>
-          <p className="navbar-item">Technologies</p>
-          <p className="navbar-item">Contacts</p>
+        <div
+          className={`navbar-menu has-text-centered ${
+            menu ? "is-active" : null
+          }`}
+          id="navbarElements"
+        >
+          <div className="navbar-end">
+            <p
+              onClick={toggleMenu}
+              className="navbar-item has-text-weight-semibold has-text-danger"
+            >
+              Home
+            </p>
+            <p
+              onClick={toggleMenu}
+              className="navbar-item has-text-weight-semibold"
+            >
+              About
+            </p>
+            <p
+              onClick={toggleMenu}
+              className="navbar-item has-text-weight-semibold"
+            >
+              Projects
+            </p>
+            <p
+              onClick={toggleMenu}
+              className="navbar-item has-text-weight-semibold"
+            >
+              Contact
+            </p>
+            <button
+              className="delete mt-3 is-hidden-desktop"
+              onClick={toggleMenu}
+            ></button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 
