@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -8,9 +9,11 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const { pathname } = useLocation();
+
   return (
     <div className="hero-head">
-      <nav className="navbar has-shadow is-transparent is-spaced is-fixed-top is-dark">
+      <nav className="navbar has-shadow is-spaced is-fixed-top is-dark has-background-dark">
         <div className="navbar-brand">
           <p className="navbar-item is-size-2">AC</p>
           <div
@@ -33,25 +36,33 @@ const Navbar = () => {
           <div className="navbar-end">
             <p
               onClick={toggleMenu}
-              className="navbar-item has-text-weight-semibold has-text-danger mx-3"
+              className={`navbar-item has-text-weight-semibold mx-3 ${
+                pathname === "/" ? "has-text-danger" : null
+              }`}
             >
               <Link to="/">Home</Link>
             </p>
             <p
               onClick={toggleMenu}
-              className="navbar-item has-text-weight-semibold mx-3"
+              className={`navbar-item has-text-weight-semibold mx-3 ${
+                pathname === "/About" ? "has-text-danger" : null
+              }`}
             >
               <Link to="/About">About</Link>
             </p>
             <p
               onClick={toggleMenu}
-              className="navbar-item has-text-weight-semibold mx-3"
+              className={`navbar-item has-text-weight-semibold mx-3 ${
+                pathname === "/Projects" ? "has-text-danger" : null
+              }`}
             >
               <Link to="/Projects">Projects</Link>
             </p>
             <p
               onClick={toggleMenu}
-              className="navbar-item has-text-weight-semibold mx-3"
+              className={`navbar-item has-text-weight-semibold mx-3 ${
+                pathname === "/Contact" ? "has-text-danger" : null
+              }`}
             >
               <Link to="/Contact">Contact</Link>
             </p>

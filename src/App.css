@@ -18,3 +18,13 @@
   display: flex;
   justify-content: center;
 }
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    background-position: center;
+  }
+
+  .hero-head {
+    margin-bottom: 50px;
+  }
+}
