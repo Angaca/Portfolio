@@ -13,3 +13,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.hero-foot {
+  display: flex;
+  justify-content: center;
+}

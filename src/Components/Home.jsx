@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="columns">
+    <div className="columns ml-3">
       <div className="column is-7">
         <p className="title">Hi, I'm Andrea.</p>
         <p className="subtitle mt-4">Junior Full Stack Developer</p>

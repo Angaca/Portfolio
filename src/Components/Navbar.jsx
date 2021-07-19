@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -32,27 +33,27 @@ const Navbar = () => {
           <div className="navbar-end">
             <p
               onClick={toggleMenu}
-              className="navbar-item has-text-weight-semibold has-text-danger"
+              className="navbar-item has-text-weight-semibold has-text-danger mx-3"
             >
-              Home
+              <Link to="/">Home</Link>
             </p>
             <p
               onClick={toggleMenu}
-              className="navbar-item has-text-weight-semibold"
+              className="navbar-item has-text-weight-semibold mx-3"
             >
-              About
+              <Link to="/About">About</Link>
             </p>
             <p
               onClick={toggleMenu}
-              className="navbar-item has-text-weight-semibold"
+              className="navbar-item has-text-weight-semibold mx-3"
             >
-              Projects
+              <Link to="/Projects">Projects</Link>
             </p>
             <p
               onClick={toggleMenu}
-              className="navbar-item has-text-weight-semibold"
+              className="navbar-item has-text-weight-semibold mx-3"
             >
-              Contact
+              <Link to="/Contact">Contact</Link>
             </p>
             <button
               className="delete mt-3 is-hidden-desktop"
