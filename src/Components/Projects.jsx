@@ -1,17 +1,28 @@
 import NCReviews from "../asset/NCReviews.png";
 import ReviewsApi from "../asset/ReviewsApi.png";
 import PokeCard from "../asset/PokeCard.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
     <div className="container">
-      <p className="title">Those are some of my works</p>
+      <div className="columns">
+        <div className="column is-4">
+          <p className="title">Some of my works</p>
+        </div>
+        <div className="column is-4"></div>
+        <div className="column is-4 right">
+          <p className="has-text-danger">
+            <Link to="/Contact">Get in touch {">"}</Link>
+          </p>
+        </div>
+      </div>
       <div className="columns is-vcentered is-multiline">
-        <div className="column is-12">
+        <div className="column is-12 is-hidden">
           <div className="card">
             <header className="card-header">
               <div className="card-header-title is-centered is-size-4">
-                <p>NC Reviews</p>
+                <p>Team Project</p>
               </div>
             </header>
             <div className="card-content">
