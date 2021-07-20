@@ -32,7 +32,7 @@ const Projects = () => {
                     <img src={NCReviews} alt="Nc Reviews Webiste" />
                   </figure>
                 </div>
-                <div className="content">
+                <div className="content is-size-5">
                   NC Reviews is a sample website made with React and Bulma which
                   allows the users to consult, write, edit, vote and comment on
                   table games. It is the Front End side of a Full Stack project,
@@ -77,7 +77,7 @@ const Projects = () => {
                     <img src={NCReviews} alt="Nc Reviews Webiste" />
                   </figure>
                 </div>
-                <div className="content">
+                <div className="content is-size-5">
                   NC Reviews is a sample website made with React and Bulma which
                   allows the users to consult, write, edit, vote and comment on
                   table games. It is the Front End side of a Full Stack project,
@@ -122,7 +122,7 @@ const Projects = () => {
                     <img src={ReviewsApi} alt="Nc Reviews Webiste" />
                   </figure>
                 </div>
-                <div className="content">
+                <div className="content is-size-5">
                   Games Reviews is an API build as Back End Part. Via Node,
                   Express and PostgreSQL it offers data and functionality to
                   store and manipulate table games reviews, comments and users
@@ -167,7 +167,7 @@ const Projects = () => {
                     <img src={PokeCard} alt="Nc Reviews Webiste" />
                   </figure>
                 </div>
-                <div className="content">
+                <div className="content is-size-5">
                   Pokédex Poké Card is a fun experiment as my first React app
                   and vanilla CSS. The concept behind is to have a modern
                   Pokédex with a recognisable style inspired from the Pokémon

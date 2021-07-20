@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
+import Andrea from "../asset/Andrea_Catania.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -18,6 +19,9 @@ const Navbar = () => {
           <p className="navbar-item is-size-2">
             <Link to="/">AC</Link>
           </p>
+          <figure className="image is-48x48">
+            <img className="is-rounded" src={Andrea} alt="" />
+          </figure>
           <div
             className="navbar-burger my-auto mr-3"
             data-target="navbarElements"
