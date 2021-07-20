@@ -11,7 +11,7 @@ import Contact from "./Components/Contact";
 function App() {
   return (
     <div className="App">
-      <section class="hero is-dark is-large is-fullheight">
+      <section class="hero is-black is-large is-fullheight">
         <Navbar />
         <div class="hero-body">
           <Switch>

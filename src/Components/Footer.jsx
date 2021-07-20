@@ -3,7 +3,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,11 +31,11 @@ const Footer = () => {
             <FontAwesomeIcon icon={faTwitter} />
           </span>
         </a>
-        <Link to="/Contact">
+        <a href="mailto:andreacatania91@gmail.com">
           <span className="icon mx-3">
             <FontAwesomeIcon icon={faEnvelope} />
           </span>
-        </Link>
+        </a>
       </div>
     </div>
   );
