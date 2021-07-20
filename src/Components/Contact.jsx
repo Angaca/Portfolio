@@ -16,7 +16,12 @@ const Contact = () => {
     event.preventDefault();
 
     emailjs
-      .sendForm(key.SERVICE_ID, key.TEMPLATE_ID, event.target, key.USER_ID)
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        event.target,
+        process.env.REACT_APP_USER_ID
+      )
       .then(
         (result) => {
           event.target.reset();
