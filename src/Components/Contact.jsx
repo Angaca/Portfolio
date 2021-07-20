@@ -5,9 +5,13 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import emailjs from "emailjs-com";
+import { useState } from "react";
 import key from "../emailJSKey";
 
 const Contact = () => {
+  const [success, setSuccess] = useState(false);
+  const [fail, setFail] = useState(false);
+
   const sendEmail = (event) => {
     event.preventDefault();
 
@@ -16,10 +20,10 @@ const Contact = () => {
       .then(
         (result) => {
           event.target.reset();
-          console.log(result.text);
+          setSuccess(true);
         },
         (error) => {
-          console.log(error.text);
+          setFail(true);
         }
       );
   };
@@ -64,11 +68,11 @@ const Contact = () => {
                 </span>
               </div>
             </div>
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control">
+            <div className="field">
+              <label className="label">Message</label>
+              <div className="control">
                 <textarea
-                  class="textarea"
+                  className="textarea"
                   placeholder="Please enter your message"
                   rows="7"
                   name="message"
@@ -86,6 +90,30 @@ const Contact = () => {
               </div>
             </div>
           </form>
+        </div>
+        <div className="column is-3">
+          {success ? (
+            <article className="message is-danger mt-3">
+              <div className="message-header">
+                <p>Message sent, I will get back to you shortly</p>
+                <button
+                  className="delete"
+                  onClick={() => setSuccess(false)}
+                ></button>
+              </div>
+            </article>
+          ) : null}
+          {fail ? (
+            <article className="message is-danger mt-3">
+              <div className="message-header">
+                <p>An error occurred, Please try again</p>
+                <button
+                  className="delete"
+                  onClick={() => setFail(false)}
+                ></button>
+              </div>
+            </article>
+          ) : null}
         </div>
       </div>
     </div>

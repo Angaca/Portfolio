@@ -15,7 +15,9 @@ const Navbar = () => {
     <div className="hero-head">
       <nav className="navbar has-shadow is-spaced is-fixed-top is-dark has-background-dark">
         <div className="navbar-brand">
-          <p className="navbar-item is-size-2">AC</p>
+          <p className="navbar-item is-size-2">
+            <Link to="/">AC</Link>
+          </p>
           <div
             className="navbar-burger my-auto mr-3"
             data-target="navbarElements"

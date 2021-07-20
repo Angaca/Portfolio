@@ -11,9 +11,9 @@ import Contact from "./Components/Contact";
 function App() {
   return (
     <div className="App">
-      <section class="hero is-black is-large is-fullheight">
+      <section className="hero is-black is-large is-fullheight">
         <Navbar />
-        <div class="hero-body">
+        <div className="hero-body">
           <Switch>
             <Route exact path="/">
               <Home />
