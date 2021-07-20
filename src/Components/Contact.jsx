@@ -6,7 +6,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import emailjs from "emailjs-com";
 import { useState } from "react";
-import key from "../emailJSKey";
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
