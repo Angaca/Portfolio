@@ -15,6 +15,9 @@ function App() {
         <Navbar />
         <div className="hero-body">
           <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
             <Route exact path="/About">
               <About />
             </Route>
@@ -24,7 +27,7 @@ function App() {
             <Route exact path="/Contact">
               <Contact />
             </Route>
-            <Route path="/">
+            <Route path="*">
               <Home />
             </Route>
           </Switch>
