@@ -34,8 +34,10 @@ const Contact = () => {
 
   return (
     <div className="container">
-      <p className="title">Let's have a chat</p>
-      <p className="subtitle">
+      <p className="title is-size-3-tablet is-size-4-mobile">
+        Let's have a chat
+      </p>
+      <p className="subtitle is-size-5-tablet is-size-6-mobile">
         Fill the form below or send me an email at{" "}
         <a className="has-text-danger" href="mailto:andreacatania91@gmail.com">
           andreacatania91@gmail.com

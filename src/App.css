@@ -11,7 +11,11 @@
 .hero {
   background-image: url("./asset/laptop.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150%;
+}
+
+.hero-body {
+  padding-top: 10rem;
 }
 
 .hero-foot {
@@ -24,17 +28,30 @@
   justify-content: flex-end;
 }
 
+.tile.is-child.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
 @media only screen and (max-width: 800px) {
   .hero {
-    background-position: center;
-  }
-
-  .hero-head {
-    margin-bottom: 50px;
+    background-size: cover;
   }
 
   .right {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .card-content {
+    padding-top: 10px;
+  }
+
+  .card-footer-item {
+    padding: 5px;
   }
 }
