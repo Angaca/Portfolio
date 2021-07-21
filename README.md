@@ -2,7 +2,7 @@
 
 Welcome to my Portfolio, I have designed and made this website using mainly React and Bulma.
 
-Please see the hosted version here >>
+Please see the hosted version [here](https://portfolio-andrea.netlify.app/)
 
 ---
 

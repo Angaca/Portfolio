@@ -6,6 +6,16 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="container">
+      {/* <div className="tabs is-boxed">
+        <ul>
+          <li className="is-active">
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Technologies</a>
+          </li>
+        </ul>
+      </div> */}
       <div className="columns">
         <div className="column is-5">
           <p className="title is-size-4-mobile is-size-3-tablet">
