@@ -1,3 +1,7 @@
+html {
+  overflow-y: auto;
+}
+
 .App {
   display: flex;
   min-height: 100vh;
@@ -35,6 +39,20 @@
 
 .card-footer {
   margin-top: auto;
+}
+
+.top-tabs {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+
+.hero.is-black .tabs.is-boxed li.is-active a,
+.hero.is-black .tabs.is-boxed li.is-active a:hover,
+.hero.is-black .tabs.is-toggle li.is-active a,
+.hero.is-black .tabs.is-toggle li.is-active a:hover {
+  background-color: #ff6b35;
+  border-color: #ff6b35;
 }
 
 @media only screen and (max-width: 1024px) {

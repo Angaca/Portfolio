@@ -17,7 +17,7 @@ const About = () => {
           designing and practicing in a large variety of subjects.
         </p>
         <p className="is-size-5-tablet mt-3 has-text-weight-semibold">
-          Please have a look to my{" "}
+          Have a look to my{" "}
           <span className="has-text-danger has-text-weight-semibold">
             <Link to="/Projects">work.</Link>
           </span>
