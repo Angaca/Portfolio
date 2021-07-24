@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ProjectCards from "./ProjectCards";
+import Techs from "./Techs";
 
 const Projects = () => {
   // eslint-disable-next-line
@@ -34,6 +35,7 @@ const Projects = () => {
         </ul>
       </div> */}
       {projects ? <ProjectCards /> : null}
+      {tech ? <Techs /> : null}
     </div>
   );
 };
