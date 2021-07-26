@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
 import Andrea from "../asset/Andrea_Catania.png";
+import Logo from "../asset/ACLogo.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -16,9 +17,11 @@ const Navbar = () => {
     <div className="hero-head">
       <nav className="navbar has-shadow is-spaced is-fixed-top is-dark has-background-dark">
         <div className="navbar-brand">
-          <p className="navbar-item is-size-2">
-            <Link to="/">AC</Link>
-          </p>
+          <Link to="/">
+            <figure className="navbar-item image is-64x64">
+              <img src={Logo} alt="AC" />
+            </figure>
+          </Link>
           <figure className="image is-48x48">
             <img className="is-rounded" src={Andrea} alt="" />
           </figure>
