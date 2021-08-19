@@ -1,6 +1,7 @@
 import NCReviews from "../asset/NCReviews.png";
 import ReviewsApi from "../asset/ReviewsApi.png";
 import PokeCard from "../asset/PokeCard.png";
+import Melodia from "../asset/Melodia.png";
 import { Link } from "react-router-dom";
 
 const ProjectCards = () => {
@@ -20,6 +21,39 @@ const ProjectCards = () => {
         </div>
       </div>
       <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <div class="tile is-child card">
+            <header className="card-header">
+              <div className="card-header-title is-centered is-size-4-tablet is-size-5-mobile">
+                <p>Melodia</p>
+              </div>
+            </header>
+            <div className="card-content">
+              <figure className="image">
+                <img src={Melodia} alt="Melodia" />
+              </figure>
+              <div className="content is-size-5-tablet">
+                Melodia is a fun mobile music guessing game to play in solo.
+                Playing 10 round and getting as much points as possible. It uses
+                Spotify API for the songs and it's built with React Native,
+                Vanilla CSS, Lottie animations and some AWS services such as
+                Dynamo DB with GraphQL.
+              </div>
+            </div>
+            <footer className="card-footer">
+              <p className="card-footer-item">
+                {" "}
+                <a
+                  href="https://github.com/Angaca/Melodia"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  See it on Github {">"}
+                </a>
+              </p>
+            </footer>
+          </div>
+        </div>
         <div class="tile is-parent">
           <div class="tile is-child card">
             <header className="card-header">
